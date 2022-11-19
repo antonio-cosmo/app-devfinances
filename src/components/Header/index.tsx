@@ -7,12 +7,12 @@ export function Header() {
     <StyledHeader>
       <Content>
       <NavBar>
-          <Link href="#">
+          <Link href="/">
             <span><i>c</i><CurrencyCircleDollar size={54} weight='fill' />oins</span>
           </Link>
           <ul>
             <li>
-              <Link href="#">Projetos</Link>
+              <Link href="/projects">Projetos</Link>
             </li>
           </ul>
         </NavBar>

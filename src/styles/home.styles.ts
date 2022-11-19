@@ -26,13 +26,14 @@ export const Container = styled.section`
 `
 
 
-export const LinkBtn = styled(Link)`
+export const NewProjectButton = styled.button`
   background: ${props => props.theme['blue-700']};
   color: ${props => props.theme.white};
   font-weight: bold;
   padding: 1em 1em;
   text-decoration: none;
   transition: 0.5s;
+  border: 0;
   border-radius: 5px;
   &:hover{
     background: ${props => props.theme['blue-500']};
