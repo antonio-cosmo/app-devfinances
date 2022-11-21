@@ -3,14 +3,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: ${props => props.theme['gray-900'] };
-  padding: .5em;
+  padding: 1rem;
   border: 1px solid ${props => props.theme['gray-500']};
   border-radius: 5px;
-  width: 24%;
-  margin: 0.5%;
+  min-width: 24%;
   h4 {
     color: ${props => props.theme.white};
-    padding: 0.4rem;
     margin-bottom: 1.3rem;
     font-size: 1.3rem;
   }
@@ -51,7 +49,9 @@ export const Actions = styled.div`
   margin-top: 1.2em;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1rem;
+  /* justify-content: space-around; */
   flex-wrap: wrap;
   a,
   button {

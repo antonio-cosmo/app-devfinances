@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <Container>
       <h1>
-        Bem-vindo ao <span>Coins</span>
+        Bem-vindo ao <span>dev.finances</span>
       </h1>
       <p>Comece a gerenciar os seus projetos agora mesmo</p>
       <Dialog.Root open={openModal} onOpenChange={handleToggleModal}>
@@ -25,7 +25,7 @@ export default function Home() {
         <NewProjectModal handlToggleModal={handleToggleModal}/>
       </Dialog.Root>
       
-      <Image src={savings} alt=''/>
+      <Image src={savings} alt='' priority />
     </Container>
   )
 }

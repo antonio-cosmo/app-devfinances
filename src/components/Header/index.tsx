@@ -8,7 +8,7 @@ export function Header() {
       <Content>
       <NavBar>
           <Link href="/">
-            <span><i>c</i><CurrencyCircleDollar size={54} weight='fill' />oins</span>
+            <span><CurrencyCircleDollar size={54} weight='fill' />dev.finances</span>
           </Link>
           <ul>
             <li>

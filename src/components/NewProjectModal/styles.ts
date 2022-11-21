@@ -19,7 +19,6 @@ export const Content = styled(Dialog.Content)`
   left: 50%;
   transform: translate(-50%, -50%);
   h2 {
-    color: var(--text-title);
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -28,21 +27,10 @@ export const Content = styled(Dialog.Content)`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    input {
-      border-radius: 6px;
-      border: 0;
-      background: ${props => props.theme["gray-900"]};
-      color: ${props => props.theme["gray-300"]};
-      padding: 1rem;
-      &::placeholder {
-        color: ${props => props.theme["gray-500"]};
-      }
-    }
     button[type='submit'] {
       height: 50px;
       border: 0;
-      background: ${props => props.theme['blue-700']};
-      
+      background: ${props => props.theme['blue-700']};   
       color: ${props => props.theme.white};
       font-weight: bold;
       padding: 0 1.25rem;
@@ -77,16 +65,20 @@ export const InputContainer =styled.div`
   label{
     margin-bottom: .6em;
     font-weight: bold;
-    color: var(--text-title);
   }
-  input{
-    padding: .7em;
-    border-radius: 0;
-    border: none;
-    &::placeholder{
-      color: var(--text-body);
+  
+  input {
+    border-radius: 6px;
+    border: 0;
+    background: ${props => props.theme["gray-900"]};
+    color: ${props => props.theme["gray-300"]};
+    padding: 1rem;
+    &::placeholder {
+      color: ${props => props.theme["gray-500"]};
     }
   }
+   
+  
 `
 
 export const SelectContainer =styled.div`
@@ -96,11 +88,12 @@ export const SelectContainer =styled.div`
   label{
     margin-bottom: .6em;
     font-weight: bold;
-    color: var(--text-title);
   }
   select{
     padding: .7em;
     border-radius: 0;
     border: none;
+    background: ${props => props.theme["gray-900"]};
+    color: ${props => props.theme["gray-300"]};
   }
 `

@@ -15,7 +15,11 @@ export const NavBar = styled.nav`
   padding: 2rem;
   a{
     text-decoration: none;
+    
     span{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
       font-size: 32px;
       font-style: italic;
       font-weight: bold;
