@@ -10,27 +10,27 @@ export default function Projects(){
     setOpenModal(!openModal);
   }
     return (
-      <Content className='start'>
+    <Content className='start'>
 
-    <StyledProjects>
+      <StyledProjects>
 
-      <div className='title'>
-        <h1>Meus Projetos</h1>
+        <div className='title'>
+          <h1>Meus Projetos</h1>
 
-        <Dialog.Root open={openModal} onOpenChange={handleToggleModal}>
-        <Dialog.Trigger asChild>
-          <NewProjectButton>
-            Novo projeto 
-          </NewProjectButton>
-        </Dialog.Trigger>
-        <NewProjectModal handlToggleModal={handleToggleModal}/>
-        </Dialog.Root>
-        
-      </div>
-      <ContainerCard>
-        <ProjectCard/>
-      </ContainerCard>
-    </StyledProjects>
+          <Dialog.Root open={openModal} onOpenChange={handleToggleModal}>
+          <Dialog.Trigger asChild>
+            <NewProjectButton>
+              Novo projeto 
+            </NewProjectButton>
+          </Dialog.Trigger>
+          <NewProjectModal handlToggleModal={handleToggleModal}/>
+          </Dialog.Root>
+          
+        </div>
+        <ContainerCard>
+          <ProjectCard/>
+        </ContainerCard>
+      </StyledProjects>
     </Content>
 
 

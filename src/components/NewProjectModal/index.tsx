@@ -1,15 +1,18 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { X } from 'phosphor-react'
 import { FormEvent } from 'react'
+import { useProjects } from '../../context/project.context'
 import { Content, Overlay, Close, InputContainer, SelectContainer } from './styles'
 
+
 interface INewprojectModalProps {
-    handlToggleModal: () => void
+    handlToggleModal: () => void,
 }
 
 
 export function NewProjectModal({ handlToggleModal }: INewprojectModalProps) {
 
+    const {categories} = useProjects();
     const handleSubmit =(e:FormEvent)=>{
         e.preventDefault();
     }
@@ -54,8 +57,11 @@ export function NewProjectModal({ handlToggleModal }: INewprojectModalProps) {
                             id="categoryId"
                         >
                             <option>Selecione uma opção</option>
-                            <option>Infra</option>
-                            <option>Desenvolvimento</option>
+                            {
+                                categories.map(op => (
+                                    <option key={op.id} value={op.id}>{op.name}</option>
+                                ))
+                            }
 
                         </select>
                     </SelectContainer>
@@ -68,3 +74,4 @@ export function NewProjectModal({ handlToggleModal }: INewprojectModalProps) {
 
     )
 }
+

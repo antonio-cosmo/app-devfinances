@@ -12,7 +12,7 @@ export const NavBar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 0;
   a{
     text-decoration: none;
     

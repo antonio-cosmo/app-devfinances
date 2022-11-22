@@ -13,7 +13,7 @@ export function ProjectCard() {
         <span className="infra"></span> Infra
       </Category>
       <Actions>
-        <BtnEdit href="#">
+        <BtnEdit href="/projects/12345">
            Editar
         </BtnEdit>
         <BtnDelete>

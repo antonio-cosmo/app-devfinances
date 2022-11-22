@@ -5,6 +5,7 @@ export const Content = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
   &.mini_height{
     min-height: 75%;
   }
